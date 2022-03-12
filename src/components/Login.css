@@ -381,6 +381,11 @@
   position: relative;
 }
 
+.li-footer__item-link:hover {
+  text-decoration: underline;
+  color: #0a66c2;
+}
+
 .li-footer__copy-logo {
   color: rgba(0, 0, 0, 0.75);
   display: inline-block;
@@ -460,6 +465,18 @@
   .nav__cta-container {
     flex: 2;
     flex-wrap: wrap;
+  }
+
+  .li-footer__list {
+    width: 100%;
+    flex-direction: row;
+    padding: 24px 16px;
+    align-items: start;
+  }
+
+  .li-footer__item {
+    width: 50%;
+    justify-content: flex-start;
   }
 }
 @media (min-width: 992px) {
