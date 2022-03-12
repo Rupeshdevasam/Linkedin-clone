@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./Login.css";
 
 const Login = (props) => {
@@ -12,7 +11,7 @@ const Login = (props) => {
 
         <ul className="nav__menu">
           <li>
-            <a href="" className="nav__menu-link">
+            <a href="/" className="nav__menu-link">
               <span className="nav__menu-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +30,7 @@ const Login = (props) => {
             </a>
           </li>
           <li>
-            <a href="" className="nav__menu-link">
+            <a href="/" className="nav__menu-link">
               <span className="nav__menu-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +49,7 @@ const Login = (props) => {
             </a>
           </li>
           <li>
-            <a href="" className="nav__menu-link">
+            <a href="/" className="nav__menu-link">
               <span className="nav__menu-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +90,7 @@ const Login = (props) => {
             </a>
           </li>
           <li>
-            <a href="" className="nav__menu-link">
+            <a href="/" className="nav__menu-link">
               <span className="nav__menu-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -151,7 +150,9 @@ const Login = (props) => {
                   Password
                 </label>
               </div>
-              <a className="form__forgot-password-link">Forgot password?</a>
+              <a href="/" className="form__forgot-password-link">
+                Forgot password?
+              </a>
               <button type="button" className="form__button-submit">
                 Sign in
               </button>
@@ -306,7 +307,5 @@ const Login = (props) => {
     </div>
   );
 };
-
-Login.propTypes = {};
 
 export default Login;
