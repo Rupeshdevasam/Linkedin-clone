@@ -256,6 +256,7 @@
   color: rgba(0, 0, 0, 0.9);
   display: inline-block;
   margin: 16px 0 24px 0;
+  width: fit-content;
 }
 
 .form__forgot-password-link:hover,
