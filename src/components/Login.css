@@ -258,6 +258,13 @@
   margin: 16px 0 24px 0;
 }
 
+.form__forgot-password-link:hover,
+.form__forgot-password-link:focus,
+.form__forgot-password-link:active {
+  color: #0a66c2;
+  text-decoration: underline;
+}
+
 .form__button-submit {
   border: 0;
   color: #fff;
