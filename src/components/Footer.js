@@ -43,92 +43,47 @@ const Footer = ({ backgroundColor = "#ffffff" }) => {
           <span className="li-footer__copy-text">© 2022</span>
         </li>
         <li className="li-footer__item">
-          <a
-            href="https://about.linkedin.com?trk=homepage-basic_footer-about"
-            data-tracking-control-name="homepage-basic_footer-about"
-            data-tracking-will-navigate=""
-            className="li-footer__item-link"
-          >
+          <a href="/" className="li-footer__item-link">
             About
           </a>
         </li>
         <li className="li-footer__item">
-          <a
-            href="https://www.linkedin.com/accessibility?trk=homepage-basic_footer-accessibility"
-            data-tracking-control-name="homepage-basic_footer-accessibility"
-            data-tracking-will-navigate=""
-            className="li-footer__item-link"
-          >
+          <a href="/" className="li-footer__item-link">
             Accessibility
           </a>
         </li>
         <li className="li-footer__item">
-          <a
-            href="https://www.linkedin.com/legal/user-agreement?trk=homepage-basic_footer-user-agreement"
-            data-tracking-control-name="homepage-basic_footer-user-agreement"
-            data-tracking-will-navigate=""
-            className="li-footer__item-link"
-          >
+          <a href="/" className="li-footer__item-link">
             User Agreement
           </a>
         </li>
         <li className="li-footer__item">
-          <a
-            href="https://www.linkedin.com/legal/privacy-policy?trk=homepage-basic_footer-privacy-policy"
-            data-tracking-control-name="homepage-basic_footer-privacy-policy"
-            data-tracking-will-navigate=""
-            className="li-footer__item-link"
-          >
+          <a href="/" className="li-footer__item-link">
             Privacy Policy
           </a>
         </li>
         <li className="li-footer__item">
-          <a
-            href="https://www.linkedin.com/legal/cookie-policy?trk=homepage-basic_footer-cookie-policy"
-            data-tracking-control-name="homepage-basic_footer-cookie-policy"
-            data-tracking-will-navigate=""
-            className="li-footer__item-link"
-          >
+          <a href="/" className="li-footer__item-link">
             Cookie Policy
           </a>
         </li>
         <li className="li-footer__item">
-          <a
-            href="https://www.linkedin.com/legal/copyright-policy?trk=homepage-basic_footer-copyright-policy"
-            data-tracking-control-name="homepage-basic_footer-copyright-policy"
-            data-tracking-will-navigate=""
-            className="li-footer__item-link"
-          >
+          <a href="/" className="li-footer__item-link">
             Copyright Policy
           </a>
         </li>
         <li className="li-footer__item">
-          <a
-            href="https://brand.linkedin.com/policies?trk=homepage-basic_footer-brand-policy"
-            data-tracking-control-name="homepage-basic_footer-brand-policy"
-            data-tracking-will-navigate=""
-            className="li-footer__item-link"
-          >
+          <a href="/" className="li-footer__item-link">
             Brand Policy
           </a>
         </li>
         <li className="li-footer__item">
-          <a
-            href="https://www.linkedin.com/psettings/guest-controls?trk=homepage-basic_footer-guest-controls"
-            data-tracking-control-name="homepage-basic_footer-guest-controls"
-            data-tracking-will-navigate=""
-            className="li-footer__item-link"
-          >
+          <a href="/" className="li-footer__item-link">
             Guest Controls
           </a>
         </li>
         <li className="li-footer__item">
-          <a
-            href="https://www.linkedin.com/legal/professional-community-policies?trk=homepage-basic_footer-community-guide"
-            data-tracking-control-name="homepage-basic_footer-community-guide"
-            data-tracking-will-navigate=""
-            className="li-footer__item-link"
-          >
+          <a href="/" className="li-footer__item-link">
             Community Guidelines
           </a>
         </li>
