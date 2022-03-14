@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "./Footer";
 import "./Login.css";
 import SpeacialButtonPrimary from "./SpeacialButtonPrimary";
@@ -7,6 +7,7 @@ import SpeacialInput from "./SpeacialInput";
 import StarterHeader from "./StarterHeader";
 
 const Login = (props) => {
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   return (
     <div className="container">
       <StarterHeader />
@@ -23,12 +24,22 @@ const Login = (props) => {
                 name="email"
                 type="text"
               />
-              <SpeacialInput
-                placeholder="Password"
-                id="password"
-                name="password"
-                type="password"
-              />
+              <div className="form__password">
+                <SpeacialInput
+                  className="form__password-input"
+                  placeholder="Password"
+                  id="password"
+                  name="password"
+                  type={isPasswordVisible ? "text" : "password"}
+                />
+                <button
+                  onClick={() => setIsPasswordVisible(!isPasswordVisible)}
+                  type="button"
+                  className="form__password-show"
+                >
+                  {isPasswordVisible ? "Hide" : "Show"}
+                </button>
+              </div>
               <a href="/" className="form__forgot-password-link">
                 Forgot password?
               </a>

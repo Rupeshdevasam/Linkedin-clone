@@ -72,6 +72,47 @@
   color: #0a66c2;
   text-decoration: underline;
 }
+.form__password {
+  position: relative;
+}
+
+.form__password-show {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: inherit;
+  height: 32px;
+  line-height: 32px;
+  overflow: hidden;
+  outline-width: 2px;
+  padding: 0 8px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 167ms;
+  transition-property: background-color, box-shadow, color;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  vertical-align: middle;
+  z-index: 0;
+  position: absolute;
+  right: 0;
+  margin-right: 8px;
+  top: calc(50% - 1rem);
+}
+
+.form__password-show:hover:not(:disabled):not(.disabled),
+.form__password-show.hover-not-disabled,
+.form__password-show:focus,
+.form__password-show.focus {
+  background-color: rgba(207, 207, 207, 0.25);
+  color: rgba(0, 0, 0, 0.75);
+}
 
 .main__right {
   flex-shrink: 1;
