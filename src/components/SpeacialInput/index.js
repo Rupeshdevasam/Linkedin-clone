@@ -1,22 +1,23 @@
-import "./SpeacialInput.css";
+import styles from "./SpeacialInput.module.css";
 import React from "react";
 
 const SpeacialInput = ({
+  cssClass = "",
   placeholder = "Enter input",
   id = "",
   name = "",
   type = "text",
 }) => {
   return (
-    <div className="form__input">
+    <div className={`${styles.form__input} ${cssClass}`}>
       <input
-        className="form__input-input"
+        className={styles["form__input-input"]}
         type={type}
         placeholder=" "
         id={id}
         name={name}
       />
-      <label className="form__input-label" htmlFor={id}>
+      <label className={styles["form__input-label"]} htmlFor={id}>
         {placeholder}
       </label>
     </div>

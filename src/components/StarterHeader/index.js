@@ -1,25 +1,30 @@
-import "./StarterHeader.css";
+import styles from "./StarterHeader.module.css";
 import React from "react";
 
 const StarterHeader = ({
+  cssClass = "",
   logoVisible = true,
   menuVisible = true,
   signInButtonVisible = true,
   joinNowButtonVisible = true,
 }) => {
   return (
-    <nav className="nav">
+    <nav className={`${styles.nav} ${cssClass}`}>
       {logoVisible && (
-        <a href="/" className="nav__logo-link">
-          <img className="nav__logo-img" src="/images/login-logo.svg" alt="" />
+        <a href="/" className={styles["nav__logo-link"]}>
+          <img
+            className={styles["nav__logo-img"]}
+            src="/images/login-logo.svg"
+            alt=""
+          />
         </a>
       )}
 
       {menuVisible && (
-        <ul className="nav__menu">
+        <ul className={styles.nav__menu}>
           <li>
-            <a href="/" className="nav__menu-link">
-              <span className="nav__menu-icon">
+            <a href="/" className={styles["nav__menu-link"]}>
+              <span className={styles["nav__menu-icon"]}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -33,12 +38,12 @@ const StarterHeader = ({
                   ></path>
                 </svg>
               </span>
-              <span className="nav__menu__label-text">Discover</span>
+              <span className={styles["nav__menu__label-text"]}>Discover</span>
             </a>
           </li>
           <li>
-            <a href="/" className="nav__menu-link">
-              <span className="nav__menu-icon">
+            <a href="/" className={styles["nav__menu-link"]}>
+              <span className={styles["nav__menu-icon"]}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -52,12 +57,12 @@ const StarterHeader = ({
                   ></path>
                 </svg>
               </span>
-              <span className="nav__menu__label-text">People</span>
+              <span className={styles["nav__menu__label-text"]}>People</span>
             </a>
           </li>
           <li>
-            <a href="/" className="nav__menu-link">
-              <span className="nav__menu-icon">
+            <a href="/" className={styles["nav__menu-link"]}>
+              <span className={styles["nav__menu-icon"]}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -93,12 +98,12 @@ const StarterHeader = ({
                   ></path>
                 </svg>
               </span>
-              <span className="nav__menu__label-text">Learning</span>
+              <span className={styles["nav__menu__label-text"]}>Learning</span>
             </a>
           </li>
           <li>
-            <a href="/" className="nav__menu-link">
-              <span className="nav__menu-icon">
+            <a href="/" className={styles["nav__menu-link"]}>
+              <span className={styles["nav__menu-icon"]}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -112,21 +117,27 @@ const StarterHeader = ({
                   ></path>
                 </svg>
               </span>
-              <span className="nav__menu__label-text">Jobs</span>
+              <span className={styles["nav__menu__label-text"]}>Jobs</span>
             </a>
           </li>
         </ul>
       )}
 
-      <div className="nav__cta-container">
+      <div className={styles["nav__cta-container"]}>
         {joinNowButtonVisible && (
-          <a href="/" className="nav__button nav__button-primary">
+          <a
+            href="/"
+            className={`${styles.nav__button} ${styles["nav__button-primary"]}`}
+          >
             Join now
           </a>
         )}
 
         {signInButtonVisible && (
-          <a href="/" className="nav__button nav__button-secondary">
+          <a
+            href="/"
+            className={`${styles.nav__button} ${styles["nav__button-secondary"]}`}
+          >
             Sign in
           </a>
         )}

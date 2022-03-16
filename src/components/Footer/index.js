@@ -1,15 +1,15 @@
-import "./Footer.css";
+import styles from "./Footer.module.css";
 import React from "react";
 
-const Footer = ({ backgroundColor = "#ffffff" }) => {
+const Footer = ({ cssClass = "", backgroundColor = "#ffffff" }) => {
   return (
     <footer
       style={{ "--background-color": backgroundColor }}
-      className="li-footer"
+      className={`${styles["li-footer"]} ${cssClass}`}
     >
-      <ul className="li-footer__list">
-        <li className="li-footer__item">
-          <span className="li-footer__copy-logo">
+      <ul className={styles["li-footer__list"]}>
+        <li className={styles["li-footer__item"]}>
+          <span className={styles["li-footer__copy-logo"]}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 56 14"
@@ -40,50 +40,50 @@ const Footer = ({ backgroundColor = "#ffffff" }) => {
               </g>
             </svg>
           </span>
-          <span className="li-footer__copy-text">© 2022</span>
+          <span className={styles["li-footer__copy-text"]}>© 2022</span>
         </li>
-        <li className="li-footer__item">
-          <a href="/" className="li-footer__item-link">
+        <li className={styles["li-footer__item"]}>
+          <a href="/" className={styles["li-footer__item-link"]}>
             About
           </a>
         </li>
-        <li className="li-footer__item">
-          <a href="/" className="li-footer__item-link">
+        <li className={styles["li-footer__item"]}>
+          <a href="/" className={styles["li-footer__item-link"]}>
             Accessibility
           </a>
         </li>
-        <li className="li-footer__item">
-          <a href="/" className="li-footer__item-link">
+        <li className={styles["li-footer__item"]}>
+          <a href="/" className={styles["li-footer__item-link"]}>
             User Agreement
           </a>
         </li>
-        <li className="li-footer__item">
-          <a href="/" className="li-footer__item-link">
+        <li className={styles["li-footer__item"]}>
+          <a href="/" className={styles["li-footer__item-link"]}>
             Privacy Policy
           </a>
         </li>
-        <li className="li-footer__item">
-          <a href="/" className="li-footer__item-link">
+        <li className={styles["li-footer__item"]}>
+          <a href="/" className={styles["li-footer__item-link"]}>
             Cookie Policy
           </a>
         </li>
-        <li className="li-footer__item">
-          <a href="/" className="li-footer__item-link">
+        <li className={styles["li-footer__item"]}>
+          <a href="/" className={styles["li-footer__item-link"]}>
             Copyright Policy
           </a>
         </li>
-        <li className="li-footer__item">
-          <a href="/" className="li-footer__item-link">
+        <li className={styles["li-footer__item"]}>
+          <a href="/" className={styles["li-footer__item-link"]}>
             Brand Policy
           </a>
         </li>
-        <li className="li-footer__item">
-          <a href="/" className="li-footer__item-link">
+        <li className={styles["li-footer__item"]}>
+          <a href="/" className={styles["li-footer__item-link"]}>
             Guest Controls
           </a>
         </li>
-        <li className="li-footer__item">
-          <a href="/" className="li-footer__item-link">
+        <li className={styles["li-footer__item"]}>
+          <a href="/" className={styles["li-footer__item-link"]}>
             Community Guidelines
           </a>
         </li>
