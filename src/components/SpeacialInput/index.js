@@ -3,15 +3,16 @@ import React from "react";
 
 const SpeacialInput = ({
   cssClass = "",
+  inputCSS = "",
   placeholder = "Enter input",
   id = "",
   name = "",
   type = "text",
 }) => {
   return (
-    <div className={`${styles.form__input} ${cssClass}`}>
+    <span className={`${styles.form__input} ${cssClass}`}>
       <input
-        className={styles["form__input-input"]}
+        className={`${styles["form__input-input"]} ${inputCSS}`}
         type={type}
         placeholder=" "
         id={id}
@@ -20,7 +21,7 @@ const SpeacialInput = ({
       <label className={styles["form__input-label"]} htmlFor={id}>
         {placeholder}
       </label>
-    </div>
+    </span>
   );
 };
 

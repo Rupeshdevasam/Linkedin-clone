@@ -33,29 +33,6 @@
   width: 408px;
 }
 
-.form__divider {
-  display: flex;
-  align-items: center;
-  margin: 16px 0;
-  padding: 0 12px;
-}
-
-.form__divider::before,
-.form__divider::after {
-  content: "";
-  width: 50%;
-  height: 1px;
-  background-color: rgba(0, 0, 0, 0.35);
-}
-
-.form__divider-text {
-  padding: 0 1.6rem;
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 1.4rem;
-  line-height: 1.42857;
-  font-weight: 400;
-}
-
 .form__forgot-password-link {
   font-size: 1.6rem;
   line-height: 1.5;

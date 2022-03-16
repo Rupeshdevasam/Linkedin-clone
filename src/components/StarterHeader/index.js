@@ -135,7 +135,7 @@ const StarterHeader = ({
 
         {signInButtonVisible && (
           <a
-            href="/"
+            href="/login"
             className={`${styles.nav__button} ${styles["nav__button-secondary"]}`}
           >
             Sign in

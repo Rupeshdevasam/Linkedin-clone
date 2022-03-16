@@ -20,8 +20,8 @@
 }
 
 .nav__logo-img {
-  width: 8.4rem;
-  height: 2.1rem;
+  width: 9.4rem;
+  height: 3.1rem;
 }
 
 .nav__menu {
@@ -130,6 +130,7 @@
 @media (max-width: 768px) {
   .nav__logo-link {
     padding: 0 5px;
+    margin-top: 11px;
   }
 }
 

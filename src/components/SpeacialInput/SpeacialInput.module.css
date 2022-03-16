@@ -4,6 +4,9 @@
   position: relative;
   margin-top: 12px;
   vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .form__input-input {
   font-size: 1.6rem;
@@ -12,8 +15,8 @@
   color: rgba(0, 0, 0, 0.9);
   height: 48px;
   width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.6);
-  border-radius: 2px;
+  border: 1px solid rgba(100, 72, 72, 0.6);
+  border-radius: 4px;
   background-color: transparent;
   padding: 20px 12px 4px;
   outline: none;
@@ -33,7 +36,6 @@
   padding: 1.2rem;
   position: absolute;
   left: 0;
-  top: 0;
   transition: all 0.2s ease-in-out;
   pointer-events: none;
   height: 100%;

@@ -1,8 +1,6 @@
-.header {
-  position: relative;
-}
-
 .main {
+  display: flex;
+  flex-direction: column;
   flex: 1;
 }
 
@@ -35,6 +33,149 @@
   color: rgba(0, 0, 0, 0.9);
 }
 
+.form {
+  margin-top: 2.4rem;
+}
+
+.form__email {
+  height: 5.2rem;
+}
+
+.form__password {
+  position: relative;
+  margin-top: 2.4rem;
+}
+
+.form__password-show {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #0073b1;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: inherit;
+  height: 24px;
+  line-height: 24px;
+  overflow: hidden;
+  outline-width: 2px;
+  padding: 0 8px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition-duration: 167ms;
+  transition-duration: 167ms;
+  transition-property: background-color, box-shadow, color;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  vertical-align: middle;
+  z-index: 0;
+  color: #0a66c2 !important;
+  border-radius: 28px !important;
+  position: absolute;
+  z-index: 1;
+  top: calc(50% - 1rem);
+  right: 4px;
+}
+
+.form__password-show:hover {
+  background: #d0e8ff !important;
+}
+
+.forgot-password {
+  position: relative;
+  left: -8px;
+  margin-top: 8px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #0073b1;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: inherit;
+  height: 32px;
+  line-height: 32px;
+  overflow: hidden;
+  outline-width: 2px;
+  padding: 0 8px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 167ms;
+  transition-property: background-color, box-shadow, color;
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  vertical-align: middle;
+  z-index: 0;
+  color: #0a66c2 !important;
+  border-radius: 28px !important;
+}
+
+.forgot-password:hover {
+  background: #d0e8ff !important;
+}
+
+.signin__button {
+  margin-top: 16px;
+  height: 52px;
+  line-height: 52px;
+}
+
+.apple__button {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.apple__button:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.join__now {
+  margin: 3.2rem auto;
+}
+
+.join__now__button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #0073b1;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: inherit;
+  height: 32px;
+  line-height: 32px;
+  overflow: hidden;
+  outline-width: 2px;
+  padding: 0 8px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 167ms;
+  transition-property: background-color, box-shadow, color;
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  vertical-align: middle;
+  z-index: 0;
+  color: #0a66c2 !important;
+  border-radius: 28px !important;
+  position: relative;
+  bottom: 2px;
+}
+
+.join__now__button:hover {
+  background: #d0e8ff !important;
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 769px) {
   .card-layout {
     width: 100%;
@@ -44,5 +185,9 @@
     -webkit-box-shadow: unset;
     box-shadow: unset;
     padding: 0 32px;
+  }
+
+  .header {
+    padding-left: 28px;
   }
 }

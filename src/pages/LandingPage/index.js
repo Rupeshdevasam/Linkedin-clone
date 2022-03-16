@@ -5,8 +5,9 @@ import SpeacialButtonPrimary from "../../components/SpeacialButtonPrimary";
 import SpeacialButtonSecondary from "../../components/SpeacialButtonSecondary";
 import SpeacialInput from "../../components/SpeacialInput";
 import StarterHeader from "../../components/StarterHeader";
+import SpeacialDivider from "../../components/SpeacialDivider";
 
-const LandingPage = (props) => {
+const LandingPage = () => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   return (
     <div className="container">
@@ -45,9 +46,7 @@ const LandingPage = (props) => {
               </a>
               <SpeacialButtonPrimary text="Sign in" />
             </form>
-            <div className={styles.form__divider}>
-              <span className={styles["form__divider-text"]}>or</span>
-            </div>
+            <SpeacialDivider text="or" />
             <form className={styles.google__cta} action="">
               <SpeacialButtonSecondary
                 text="Sign in with Google"
