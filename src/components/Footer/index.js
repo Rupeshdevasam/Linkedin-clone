@@ -83,7 +83,10 @@ const Footer = ({ cssClass = "", backgroundColor = "#ffffff" }) => {
           </a>
         </li>
         <li className={styles["li-footer__item"]}>
-          <a href="/" className={styles["li-footer__item-link"]}>
+          <a
+            href="/"
+            className={`${styles["li-footer__item-link"]} ${styles["testing"]}`}
+          >
             Community Guidelines
           </a>
         </li>

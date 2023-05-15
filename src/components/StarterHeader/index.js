@@ -43,7 +43,7 @@ const StarterHeader = ({
           </li>
           <li>
             <a href="/" className={styles["nav__menu-link"]}>
-              <span className={styles["nav__menu-icon"]}>
+              <span className={styles["nav__menu-icon1"]}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -103,7 +103,9 @@ const StarterHeader = ({
           </li>
           <li>
             <a href="/" className={styles["nav__menu-link"]}>
-              <span className={styles["nav__menu-icon"]}>
+              <span
+                className={`${styles["nav__menu-icon"]} ${styles["testing"]}`}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"

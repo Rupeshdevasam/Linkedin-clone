@@ -52,3 +52,11 @@
   padding-top: 0.6rem;
   transition-delay: 0s;
 }
+
+
+
+@media (max-width: 768px) {
+    .form__input-input {
+      font-size: 0.1rem;
+    }
+}

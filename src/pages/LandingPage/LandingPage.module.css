@@ -109,6 +109,10 @@
     min-height: 0;
   }
 
+  .form__forgot-password-link {
+    pointer-events: none;
+  }
+
   .main__left {
     padding-right: 0px;
     width: 100%;
