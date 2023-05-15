@@ -20,7 +20,7 @@ const LandingPage = () => {
           <div className={styles["main__left-form"]}>
             <form className="form flex flex-direction-col" action="">
               <SpeacialInput
-                placeholder="Email or phone number"
+                placeholder="Email or phone numbr"
                 id="email"
                 name="email"
                 type="text"
